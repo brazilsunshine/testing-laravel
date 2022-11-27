@@ -43,7 +43,6 @@ class UserTest extends TestCase
         if ($user) {
             $user->delete();
         }
-
         $this->assertTrue(true);
     }
 }
