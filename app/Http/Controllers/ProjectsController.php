@@ -24,6 +24,5 @@ class ProjectsController extends Controller
         Project::create($attributes);
 
         return redirect('/projects');
-
     }
 }
