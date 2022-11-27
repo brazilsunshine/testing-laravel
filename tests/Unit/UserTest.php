@@ -43,6 +43,19 @@ class UserTest extends TestCase
         if ($user) {
             $user->delete();
         }
+
         $this->assertTrue(true);
+    }
+
+    public function test_it_store_new_users ()
+    {
+        $response = $this->post('/register', [
+            'name' => 'John Doe',
+            'email' => 'johndoe@gmail.com',
+            'password' => '12345678',
+            'password_confirmation' => '12345678'
+        ]);
+
+        $response->assertRedirect('/home');
     }
 }
