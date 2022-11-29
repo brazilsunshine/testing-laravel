@@ -1,7 +1,7 @@
 <template>
     <div>
         <p>
-            test root container
+            TEST ROOT CONTAINER
         </p>
     </div>
 </template>

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TESTING LARAVEL</title>
     <link rel="stylesheet" href="/css/dist/output.css">
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="">
     <!-- Dropzone -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css" />
 </head>
 
 
 <body class="bg-gray-background">
-<div id="app" v-cloak>
+<div id="app">
     @yield('content')
 </div>
 </body>

@@ -2193,7 +2193,7 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("p", [_vm._v("\n        test root container\n    ")])]);
+  return _c("div", [_c("p", [_vm._v("\n        TEST ROOT CONTAINER\n    ")])]);
 }];
 render._withStripped = true;
 

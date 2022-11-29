@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/projects', 'ProjectsController@index');
+Route::get('/projects/{project}', 'ProjectsController@show'); // Route Model Binding
 
 Route::post('/projects', 'ProjectsController@store');
 
