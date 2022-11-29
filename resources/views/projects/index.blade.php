@@ -8,11 +8,16 @@
 <body>
     <h1>Testing Laravel</h1>
     <ul>
-        @foreach ($projects as $project)
+        @forelse ($projects as $project)
             <li>
-                {{ $project->title }}
+                <a href="{{ '/projects/' . $project->id }}">
+                    {{ $project->title }}
+                </a>
             </li>
-        @endforeach
+
+        @empty
+            <li>No projects yet.</li>
+        @endforelse
     </ul>
 
 </body>
